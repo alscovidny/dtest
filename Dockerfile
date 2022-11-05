@@ -8,5 +8,5 @@ COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 
 COPY . .
-ENV FLASK_APP="./app.py"
+ENV FLASK_APP=./app.py
 CMD [ "python3", "-m" , "flask", "--debug", "run", "--host=0.0.0.0"]
